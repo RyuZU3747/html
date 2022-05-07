@@ -10,16 +10,73 @@
 			*{
 				font-family:'NaverD2';
 			}
-			h1{
-				text-align:center;
-				border-bottom-width: 1px;
-				border-bottom-color: gray;
+			.main{
+				height: 80px;
+			}
+			.sub{
+				position: relative;
+			}
+			
+			.main > h1{
+				z-index: 1;
+				position: fixed;
+				text-align: center;
+				box-sizing: border-box;
+				margin-left: -9px;
+				padding: 12px;
+				width: 100%;
+				border-bottom-width: 2px;
+				border-bottom-color: black;
 				border-bottom-style: outset;
+				background: yellow;
+			}
+			
+			.sub > a > button{
+				background-color: rgba(0,0,0,0);
+				color: skyblue;
+				padding: 10px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				border: 1px solid skyblue;
+				border-radius: 4px;
+				box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+			}
+			.sub > a > button:hover{
+				color: white;
+				background-color: skyblue;
+			}
+			.leftb{
+				margin-right: -5px;
+			}
+			.rightb{
+				margin-left: -5px;
+			}
+			.sub > a{
+				text-decoration-line: none;
 			}
 		</style>
     </head>
     <body>
-        <h1 style = >github페이지 테스트</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		<div class = 'main'>
+			<h1>github페이지 테스트</h1>
+		</div>
+		<div class = 'sub'>
+			<p>html 너무 어렵습니다</p>
+			<a href= "mailto:dbrua1222@gmail.com">
+				<button class = 'leftb'>
+					제작자 이메일
+				</button>
+			</a>
+			
+			<a target = 'blank' href="https://twitter.com/kawaii_ryuzu">
+				<button class = 'rightb'>
+					제작자 트위터
+				</button>
+			</a>
+			<p>
+				안녕하세요
+			</p>
+		</div>
     </body>
 </html>
