@@ -1,11 +1,14 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>테스트페이지</title>
+        <title>RyuZU</title>
 		<style>
 			@font-face{
 				font-family : 'NaverD2';
 				src: local('NaverD2'), url("./font/D2Coding/D2Coding-Ver1.3.2-20180524.ttf");
+			}
+			body{
+				margin: 0px;
 			}
 			*{
 				font-family:'NaverD2';
@@ -15,6 +18,8 @@
 			}
 			.sub{
 				position: relative;
+				width:70%;
+				float: right;
 			}
 			
 			.main > h1{
@@ -22,7 +27,6 @@
 				position: fixed;
 				text-align: center;
 				box-sizing: border-box;
-				margin-left: -9px;
 				padding: 12px;
 				width: 100%;
 				border-bottom-width: 2px;
@@ -46,14 +50,17 @@
 				color: white;
 				background-color: skyblue;
 			}
-			.leftb{
-				margin-right: -5px;
-			}
-			.rightb{
-				margin-left: -5px;
-			}
 			.sub > a{
 				text-decoration-line: none;
+			}
+			.idx{
+				margin: 5px;
+				positon: fixed;
+				float: left;
+				width: 25%;
+				box-sizing: border-box;
+				border-right-color: black;
+				border-right-style: dashed;
 			}
 		</style>
     </head>
@@ -61,22 +68,38 @@
 		<div class = 'main'>
 			<h1>github페이지 테스트</h1>
 		</div>
-		<div class = 'sub'>
-			<p>html 너무 어렵습니다</p>
-			<a href= "mailto:dbrua1222@gmail.com">
-				<button class = 'leftb'>
-					제작자 이메일
-				</button>
-			</a>
-			
-			<a target = 'blank' href="https://twitter.com/kawaii_ryuzu">
-				<button class = 'rightb'>
-					제작자 트위터
-				</button>
-			</a>
-			<p>
-				안녕하세요
-			</p>
+		
+		<div>
+			<div class = 'idx'>
+				<ui>
+					<li>안녕</li>
+					<li>하세요</li>
+				</ui>
+			</div>
+			<div class = 'sub'>
+				<p>
+					안녕하세요
+				</p>
+				<p>html 너무 어렵습니다</p>
+				<a href= "mailto:dbrua1222@gmail.com">
+					<button>
+						제작자 이메일
+					</button>
+				</a>
+
+				<a target = 'blank' href="https://twitter.com/kawaii_ryuzu">
+					<button>
+						제작자 트위터
+					</button>
+				</a>
+				
+				<a target = 'blank' href="https://github.com/RyuZU3747">
+					<button>
+						제작자 깃허브
+					</button>
+				</a>
+			</div>
 		</div>
+		
     </body>
 </html>
