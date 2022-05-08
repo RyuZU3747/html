@@ -5,6 +5,9 @@
 			body{
 				margin: 0px;
 			}
+			a{
+				text-decoration-line: none;
+			}
 			*{
 				font-family:'NaverD2';
 			}
@@ -45,9 +48,6 @@
 			.sub > a > button:hover{
 				color: white;
 				background-color: skyblue;
-			}
-			.sub > a{
-				text-decoration-line: none;
 			}
 			.idx{
 				margin: 5px;
