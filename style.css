@@ -33,7 +33,13 @@
 				border-bottom-style: outset;
 				background: yellow;
 			}
-			
+
+			.main > div{
+				z-index: 2;
+				position: fixed;
+				left: 75%;
+			}
+
 			.sub > a > button{
 				background-color: rgba(0,0,0,0);
 				color: skyblue;
